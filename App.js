@@ -4,7 +4,7 @@ import { Audio } from "expo-av";
 import Svg, { Path } from "react-native-svg";
 import { LinearGradient } from "expo-linear-gradient";
 import * as MediaLibrary from 'expo-media-library';
-import * as FileSystem from 'expo-file-system';
+// import * as FileSystem from 'expo-file-system';
 
 const App = () => {
   const [sound, setSound] = useState();
@@ -65,6 +65,7 @@ const App = () => {
         />
       </Svg>
       <Text style={styles.text}>Audio Player</Text>
+      <Text style={styles.text}>By Kent Campbell</Text>
       <FlatList
         data={audioFiles}
         keyExtractor={(item) => item.id}
